@@ -1,3 +1,7 @@
+import sys
+sys.path.append("D:/Text Summarizer Project/Text-Summarizer-Project-/src")
+
+
 import os
 from box.exceptions import BoxValueError
 import yaml
