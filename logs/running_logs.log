@@ -142,3 +142,465 @@ x============x]
 [2024-10-02 18:18:06,187: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
 
 x============x]
+[2024-10-03 10:36:35,529: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:36:35,530: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:36:35,530: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:36:35,530: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:36:35,531: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:36:37,136: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:36:37,152: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:36:37,446: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:36:37,461: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:36:37,461: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:36:37,477: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:36:37,477: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:36:37,477: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:36:37,477: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:36:37,477: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:36:37,477: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:36:38,226: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:36:38,226: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:36:38,226: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:36:38,226: ERROR: stage_02_data_validation: Configuration file not found: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+[2024-10-03 10:36:38,226: ERROR: main: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 23, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 9, in __init__
+    self.config = self.load_config()  # Load configuration on initialization
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 16, in load_config
+    with open(config_path, 'r') as config_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml'
+[2024-10-03 10:37:54,752: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:37:54,752: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:37:54,752: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:37:54,752: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:37:54,752: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:37:55,617: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:37:55,617: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:37:55,866: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:37:55,866: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:37:55,882: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:37:55,882: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:37:55,882: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:37:55,882: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:37:55,882: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:37:55,882: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:37:55,884: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:37:56,554: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:37:56,556: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:37:56,556: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:37:56,557: ERROR: stage_02_data_validation: Configuration file not found: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+[2024-10-03 10:37:56,557: ERROR: main: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 23, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 9, in __init__
+    self.config = self.load_config()  # Load configuration on initialization
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 16, in load_config
+    with open(config_path, 'r') as config_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml'
+[2024-10-03 10:41:57,382: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:41:57,382: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:41:57,382: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:41:57,382: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:41:57,382: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:41:58,179: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:41:58,179: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:41:58,441: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:41:58,452: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:41:58,454: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:41:58,455: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:41:58,455: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:41:58,455: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:41:58,456: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:41:58,456: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:41:58,457: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:41:59,210: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:41:59,210: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:41:59,210: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:41:59,210: ERROR: stage_02_data_validation: Configuration file not found: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+[2024-10-03 10:41:59,210: ERROR: main: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 20, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 9, in __init__
+    self.config = self.load_config()  # Load configuration on initialization
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 18, in load_config
+    with open(config_path, 'r') as config_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml'
+[2024-10-03 10:44:01,477: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:44:01,477: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:44:01,477: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:44:01,477: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:44:01,477: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:44:02,182: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:44:02,182: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:44:02,429: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:44:02,445: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:44:02,445: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:44:02,445: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:44:02,445: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:44:02,445: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:44:02,445: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:44:02,445: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:44:02,445: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:44:03,080: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:44:03,083: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:44:03,083: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:44:03,083: INFO: stage_02_data_validation: Attempting to load config from: D:Text Summarizer Project\Text-Summarizer-Project-\config\config.yaml]
+[2024-10-03 10:44:03,084: ERROR: stage_02_data_validation: Configuration file not found: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+[2024-10-03 10:44:03,084: ERROR: main: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 20, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 9, in __init__
+    self.config = self.load_config()  # Load configuration on initialization
+                  ^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 20, in load_config
+    with open(config_path, 'r') as config_file:
+         ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:Text Summarizer Project\\Text-Summarizer-Project-\\config\\config.yaml'
+[2024-10-03 10:50:50,226: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:50:50,226: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:50:50,226: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:50:50,226: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:50:50,226: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:50:50,946: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:50:50,947: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:50:51,200: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:50:51,215: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:50:51,215: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:50:51,215: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:50:51,215: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:50:51,215: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:50:51,215: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:50:51,215: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:50:51,215: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:50:51,883: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:50:51,883: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:50:51,883: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:50:51,883: INFO: stage_02_data_validation: Attempting to load config from: D:\Text Summarizer Project\Text-Summarizer-Project-\config\config.yaml]
+[2024-10-03 10:50:51,883: INFO: stage_02_data_validation: Configuration loaded successfully.]
+[2024-10-03 10:50:51,883: ERROR: main: 'dict' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 20, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 10, in __init__
+    self.data_validation_config = DataValidation(self.config['data_ingestion'])  # Pass data ingestion config to DataValidation
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\components\data_validation.py", line 13, in __init__
+    os.makedirs(os.path.join(self.config.root_dir, "data_ingestion", "samsum_dataset"), exist_ok=True)
+                             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'root_dir'
+[2024-10-03 10:53:04,414: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:53:04,414: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:53:04,414: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:53:04,414: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:53:04,414: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:53:05,351: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:53:05,351: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 10:53:05,602: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 10:53:05,618: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 10:53:05,621: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 10:53:05,621: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 10:53:05,622: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 10:53:05,622: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 10:53:05,622: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 10:53:05,623: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 10:53:05,623: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 10:53:06,273: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 10:53:06,273: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 10:53:06,273: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 10:53:06,273: INFO: stage_02_data_validation: Attempting to load config from: D:\Text Summarizer Project\Text-Summarizer-Project-\config\config.yaml]
+[2024-10-03 10:53:06,273: INFO: stage_02_data_validation: Configuration loaded successfully.]
+[2024-10-03 10:53:06,273: ERROR: main: 'dict' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\main.py", line 20, in <module>
+    data_validation = DataValidationTrainingPipeline()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\pipeline\stage_02_data_validation.py", line 10, in __init__
+    self.data_validation_config = DataValidation(self.config['data_ingestion'])  # Pass data ingestion config to DataValidation
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Text Summarizer Project\Text-Summarizer-Project-\src\textSummarizer\components\data_validation.py", line 13, in __init__
+    os.makedirs(os.path.join(self.config.root_dir, "data_ingestion", "samsum_dataset"), exist_ok=True)
+                             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'root_dir'
+[2024-10-03 11:04:58,070: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 11:04:58,070: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 11:04:58,072: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 11:04:58,072: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 11:04:58,072: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 11:04:58,792: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 11:04:58,794: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_ingestion...]
+[2024-10-03 11:04:59,127: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 11:04:59,133: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 11:04:59,135: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 11:04:59,136: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 11:04:59,136: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 11:04:59,137: INFO: data_ingestion: Unzip directory created at: artifacts/data_ingestion]
+[2024-10-03 11:04:59,137: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}]
+[2024-10-03 11:04:59,137: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 11:04:59,137: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 11:04:59,877: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 11:04:59,879: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 11:04:59,879: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 11:04:59,880: INFO: data_validation: Required files: ['artifacts/data_validation\\samsum_dataset\\samsum-train.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-test.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-validation.csv']]
+[2024-10-03 11:04:59,880: WARNING: data_validation: Missing file: train at artifacts/data_validation\samsum_dataset\samsum-train.csv]
+[2024-10-03 11:04:59,880: WARNING: data_validation: Missing file: test at artifacts/data_validation\samsum_dataset\samsum-test.csv]
+[2024-10-03 11:04:59,881: WARNING: data_validation: Missing file: validation at artifacts/data_validation\samsum_dataset\samsum-validation.csv]
+[2024-10-03 11:04:59,914: WARNING: main: Some required files are missing.]
+[2024-10-03 11:04:59,914: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-03 11:54:13,289: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-03 11:54:13,289: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 11:54:13,289: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 11:54:13,289: INFO: data_ingestion: Unzip directory created at: artifacts/data_validation/samsum_dataset]
+[2024-10-03 11:54:13,289: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 11:54:14,155: ERROR: data_ingestion: Error downloading file: [Errno 22] Invalid argument: 'artifacts/data_ingestion/data.zip']
+[2024-10-03 11:54:14,155: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_validation/samsum_dataset...]
+[2024-10-03 11:54:14,445: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-03 11:54:14,445: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-03 11:54:14,460: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-03 11:54:14,460: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-03 11:54:14,460: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-03 11:54:14,460: INFO: data_ingestion: Unzip directory created at: artifacts/data_validation/samsum_dataset]
+[2024-10-03 11:54:14,460: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_validation/samsum_dataset', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-03 11:54:14,460: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-03 11:54:14,460: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-03 11:54:15,269: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-03 11:54:15,269: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-03 11:54:15,285: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-03 11:54:15,285: INFO: data_validation: Required files: ['artifacts/data_validation\\samsum_dataset\\samsum-train.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-test.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-validation.csv']]
+[2024-10-03 11:54:15,287: WARNING: data_validation: Missing file: train at artifacts/data_validation\samsum_dataset\samsum-train.csv]
+[2024-10-03 11:54:15,289: WARNING: data_validation: Missing file: test at artifacts/data_validation\samsum_dataset\samsum-test.csv]
+[2024-10-03 11:54:15,290: WARNING: data_validation: Missing file: validation at artifacts/data_validation\samsum_dataset\samsum-validation.csv]
+[2024-10-03 11:54:15,291: WARNING: main: Some required files are missing.]
+[2024-10-03 11:54:15,292: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 09:54:17,245: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 09:54:17,276: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 09:54:17,276: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 09:54:17,276: INFO: data_ingestion: Unzip directory created at: artifacts/data_validation/samsum_dataset]
+[2024-10-04 09:54:17,276: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 09:54:19,218: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 09:54:19,271: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to artifacts/data_validation/samsum_dataset...]
+[2024-10-04 09:54:19,689: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 09:54:19,859: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 09:54:19,864: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 09:54:19,865: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 09:54:19,866: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 09:54:19,867: INFO: data_ingestion: Unzip directory created at: artifacts/data_validation/samsum_dataset]
+[2024-10-04 09:54:19,868: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_validation/samsum_dataset', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 09:54:19,869: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 09:54:19,871: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 09:54:20,822: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 09:54:20,824: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 09:54:20,825: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 09:54:20,825: INFO: data_validation: Required files: ['artifacts/data_validation\\samsum_dataset\\samsum-train.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-test.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-validation.csv']]
+[2024-10-04 09:54:20,825: WARNING: data_validation: Missing file: train at artifacts/data_validation\samsum_dataset\samsum-train.csv]
+[2024-10-04 09:54:20,825: WARNING: data_validation: Missing file: test at artifacts/data_validation\samsum_dataset\samsum-test.csv]
+[2024-10-04 09:54:20,826: WARNING: data_validation: Missing file: validation at artifacts/data_validation\samsum_dataset\samsum-validation.csv]
+[2024-10-04 09:54:20,827: WARNING: main: Some required files are missing.]
+[2024-10-04 09:54:20,827: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:02:36,683: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:02:36,683: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:02:36,683: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:02:36,683: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:02:36,683: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:02:37,483: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:02:37,499: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:02:37,831: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:02:37,831: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 10:02:37,831: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:02:37,847: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:02:37,847: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:02:37,847: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:02:37,847: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 10:02:37,847: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 10:02:37,847: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:02:38,488: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:02:38,504: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:02:38,504: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 10:02:38,504: INFO: data_validation: Required files: ['artifacts/data_validation\\samsum_dataset\\samsum-train.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-test.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-validation.csv']]
+[2024-10-04 10:02:38,504: WARNING: data_validation: Missing file: train at artifacts/data_validation\samsum_dataset\samsum-train.csv]
+[2024-10-04 10:02:38,504: WARNING: data_validation: Missing file: test at artifacts/data_validation\samsum_dataset\samsum-test.csv]
+[2024-10-04 10:02:38,504: WARNING: data_validation: Missing file: validation at artifacts/data_validation\samsum_dataset\samsum-validation.csv]
+[2024-10-04 10:02:38,504: WARNING: main: Some required files are missing.]
+[2024-10-04 10:02:38,508: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:04:05,900: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:04:05,900: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:04:05,900: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:04:05,900: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:04:05,900: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:04:06,668: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:04:06,668: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:04:06,908: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:04:06,924: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 10:04:06,924: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:04:06,924: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:04:06,924: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:04:06,924: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:04:06,924: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 10:04:06,924: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 10:04:06,924: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:04:07,560: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:04:07,563: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:04:07,563: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 10:04:07,564: INFO: data_validation: Required files: ['artifacts/data_validation\\samsum_dataset\\samsum-train.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-test.csv', 'artifacts/data_validation\\samsum_dataset\\samsum-validation.csv']]
+[2024-10-04 10:04:07,564: WARNING: data_validation: Missing file: train at artifacts/data_validation\samsum_dataset\samsum-train.csv]
+[2024-10-04 10:04:07,565: WARNING: data_validation: Missing file: test at artifacts/data_validation\samsum_dataset\samsum-test.csv]
+[2024-10-04 10:04:07,565: WARNING: data_validation: Missing file: validation at artifacts/data_validation\samsum_dataset\samsum-validation.csv]
+[2024-10-04 10:04:07,565: WARNING: main: Some required files are missing.]
+[2024-10-04 10:04:07,565: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:11:10,509: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:11:10,509: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:11:10,509: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:11:10,509: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:11:10,509: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:11:11,332: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:11:11,332: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:11:11,580: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:13:43,126: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:13:43,126: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:13:43,126: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:13:43,126: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:13:43,126: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:13:45,050: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:13:45,050: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:13:45,306: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:14:28,979: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:14:28,979: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:14:28,979: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:14:28,979: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:14:28,979: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:14:30,000: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:14:30,003: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:14:30,282: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:14:30,282: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 10:14:30,282: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:14:30,282: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:14:30,282: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:14:30,295: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:14:30,296: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 10:14:30,296: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 10:14:30,296: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:14:31,229: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:14:31,234: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:14:31,235: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 10:14:31,235: INFO: data_validation: Required files: ['D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-train.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-test.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-validation.csv']]
+[2024-10-04 10:14:31,236: INFO: main: All required files are present.]
+[2024-10-04 10:14:31,237: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:15:56,120: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:15:56,120: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:15:56,120: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:15:56,120: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:15:56,120: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:15:56,950: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:15:56,950: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:15:57,230: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:15:57,230: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 10:15:57,230: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:15:57,230: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:15:57,230: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:15:57,245: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:15:57,245: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 10:15:57,246: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 10:15:57,246: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:15:57,882: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:15:57,882: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:15:57,882: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 10:15:57,882: INFO: data_validation: Required files: ['D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-train.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-test.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-validation.csv']]
+[2024-10-04 10:15:57,882: INFO: main: All required files are present.]
+[2024-10-04 10:15:57,882: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:17:39,592: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:17:39,592: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:17:39,592: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:17:39,592: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:17:39,592: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:17:40,428: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:17:40,428: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:17:40,663: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:18:58,174: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:18:58,174: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:18:58,174: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:18:58,174: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:18:58,174: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:18:58,887: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:18:58,887: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:18:59,147: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:19:56,215: INFO: data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:19:56,215: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:19:56,215: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:19:56,215: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:19:56,215: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:19:57,074: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:19:57,074: INFO: data_ingestion: Extracting artifacts/data_ingestion/data.zip to D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data...]
+[2024-10-04 10:19:57,322: INFO: data_ingestion: Files extracted successfully.]
+[2024-10-04 10:19:57,322: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<]
+[2024-10-04 10:19:57,322: INFO: stage_01_data_ingestion: Configuration loaded successfully.]
+[2024-10-04 10:19:57,322: INFO: data_ingestion: Root directory created at: artifacts/data_ingestion]
+[2024-10-04 10:19:57,322: INFO: data_ingestion: Directory for local data file created at: artifacts/data_ingestion]
+[2024-10-04 10:19:57,335: INFO: data_ingestion: Unzip directory created at: D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data]
+[2024-10-04 10:19:57,335: INFO: stage_01_data_ingestion: Data ingestion configuration: {'root_dir': 'artifacts/data_ingestion', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data', 'source_url': 'https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip'}]
+[2024-10-04 10:19:57,336: INFO: stage_01_data_ingestion: Source URL: https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip]
+[2024-10-04 10:19:57,336: INFO: data_ingestion: Downloading file from https://raw.githubusercontent.com/ragztigadi/data_files/c9830f66604257b903098b53d1755e4fbc71657d/summarizer-data.zip...]
+[2024-10-04 10:19:57,958: INFO: data_ingestion: File downloaded successfully.]
+[2024-10-04 10:19:57,958: INFO: main: >>>>>>> stage Data Ingestion stage completed <<<<<<<
+
+x============x]
+[2024-10-04 10:19:57,958: INFO: main: >>>>>>> stage Data Validation stage started <<<<<<<]
+[2024-10-04 10:19:57,958: INFO: data_validation: Required files: ['D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-train.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-test.csv', 'D:/Text Summarizer Project/artifacts/data_ingestion/data/summarizer-data\\samsum-validation.csv']]
+[2024-10-04 10:19:57,994: INFO: main: All required files are present.]
+[2024-10-04 10:19:57,994: INFO: main: >>>>>>> stage Data Validation stage completed <<<<<<<
+
+x============x]
